@@ -1,0 +1,83 @@
+* {
+    /*background-color: white;*/
+    background-color: transparent;
+    color: black !important;
+}
+
+div.composer-parent {
+    background-color: #888 !important;
+}
+
+div.flex.w-full.flex-col.gap-1.empty\:hidden.first\:pt-\[3px\] {
+    background-color: lightgrey !important;
+    color: black !important;
+}
+
+touch:w-[38px] flex h-[30px] w-[30px] items-center justify-center {
+    width: 50px !important;
+    height: 50px !important;
+    background-color: black !important;
+}
+
+#page-header {
+    background-color: lightgray !important;
+    box-shadow: none !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+div.overflow-y-auto.p-4[dir="ltr"] {
+    background-color: #8e8690 !important;
+    color: black;
+}
+
+div[data-testid="composer-footer-actions"] {
+    background-color: whitesmoke !important;
+}
+
+div[data-testid="composer-action-file-upload"] {
+    opacity: 0.6 !important;
+    transition: opacity 0.3s ease-in-out;
+}
+
+div[data-testid="composer-action-file-upload"]:hover {
+    opacity: 1 !important;
+    cursor: pointer;
+}
+
+cursor-text {
+    background-color: white;
+}
+
+button[data-testid="model-switcher-dropdown-button"] {
+    visibility: hidden !important;
+}
+
+div:has(> div:contains("ChatGPT can make mistakes")) {
+    display: none !important;
+}
+
+div.text-token-text-secondary.relative.mt-auto.flex.min-h-8.w-full.items-center.justify-center.p-2.text-center.text-xs.md\:px-\[60px\] {
+    display: none !important;
+}
+
+div.relative.flex.items-center.justify-center.bg-blue-300.text-white.h-full.w-full.text-sm {
+    display: none !important;
+}
+
+div.flex.w-full.items-center.justify-center.gap-1\.5 {
+    color: transparent !important;
+}
+
+p.placeholder::before {
+    content: "enter" !important;
+    color: dimgray !important;
+    position: absolute;
+}
+
+p.placeholder::before {
+    content: attr(data-placeholder);
+    color: white !important;
+    font-size: 1.1rem;
+    position: absolute;
+    pointer-events: none;
+}

@@ -5,6 +5,13 @@
   "author": "Hadrian Lazic",
   "description": "A chrome extension that changes some of chatgpt.com's css code, to mask the usage",
   "permissions": [""],
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
   "browser_action": {
     "default_icon": "logo.png",
     "default_popup": "index.html",
