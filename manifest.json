@@ -3,18 +3,25 @@
   "name": "HideGPT",
   "version": "0.1",
   "author": "Hadrian Lazic",
-  "description": "A chrome extension that changes some of chatgpt.com's css code, to mask the usage",
-  "permissions": [""],
+  "description": "A Chrome extension that changes some of ChatGPT.com's CSS and favicon to mask usage.",
+  "permissions": [],
   "content_scripts": [
     {
-      "matches": ["https://chatgpt.com/*"],
+      "matches": ["https://chat.openai.com/*", "https://chatgpt.com/*"],
+      "js": ["faviconChanger.js"],
       "css": ["content.css"],
       "run_at": "document_idle"
     }
   ],
-  "browser_action": {
+  "web_accessible_resources": [
+    {
+      "resources": ["logo.png"],
+      "matches": ["https://chat.openai.com/*", "https://chatgpt.com/*"]
+    }
+  ],
+  "action": {
     "default_icon": "logo.png",
     "default_popup": "index.html",
-    "default_title": "A chrome extension that changes some of chatgpt.com's css code, to mask the usage"
+    "default_title": "HideGPT"
   }
 }
