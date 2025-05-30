@@ -4,11 +4,9 @@
   "version": "0.1",
   "author": "Hadrian Lazic",
   "description": "A Chrome extension that changes some of ChatGPT.com's CSS and favicon to mask usage.",
-  "permissions": [],
   "content_scripts": [
     {
       "matches": ["https://chat.openai.com/*", "https://chatgpt.com/*"],
-      "js": ["faviconChanger.js"],
       "css": ["content.css"],
       "run_at": "document_idle"
     }
