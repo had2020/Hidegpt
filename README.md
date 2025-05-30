@@ -1,4 +1,4 @@
-# hidegpt
+# Hidegpt
 
 Disguise your ChatGPT use with a clean, terminal-like interface.
 
@@ -11,7 +11,7 @@ HideGPT is a lightweight Chrome extension that disguises your use of ChatGPT.com
 
 ✅ Applies terminal-style CSS for a professional "internal tool" look.
 
-✅ Works with both https://chat.openai.com and https://chatgpt.com.
+✅ Works with https://chatgpt.com.
 
 ✅ Lightweight – no trackers, no remote code, just local styling.
 
