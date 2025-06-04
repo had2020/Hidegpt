@@ -1,5 +1,7 @@
 # Hidegpt
 
+[Chrome Web Store Page](https://chromewebstore.google.com/detail/hidegpt/ighlmljimfifecmodjkoongcjlofkpba?authuser=0)
+
 Disguise your ChatGPT use with a clean, terminal-like interface.
 
 
